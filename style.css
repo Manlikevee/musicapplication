@@ -678,5 +678,8 @@ audio::shadow audio-player {
     .header .searchbar{
         width: 0;
     }
+    #nextButton{
+        display: block;
+    }
     
 }
