@@ -880,6 +880,7 @@ audio::shadow audio-player {
 }
 .title{
   display: block;
+  font-size: small;
 }
 
   
