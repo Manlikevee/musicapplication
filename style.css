@@ -666,7 +666,7 @@ audio::shadow audio-player {
       padding: 2px;
       border-radius: 8px;
       background-color: var(--spotify);
-      margin-bottom: 0px;
+      margin-bottom: 20px;
   }
   .album {
        padding: 4px;
