@@ -150,6 +150,7 @@ window.addEventListener('DOMContentLoaded', function() {
     vinylSpinner.classList.add('spinner');
 
     document.getElementById('trackName').textContent = trackName;
+    document.getElementById('stitle').textContent = trackName;
   }
 
   function playTracks() {
@@ -161,6 +162,7 @@ window.addEventListener('DOMContentLoaded', function() {
     vinylSpinner.classList.add('spinner');
 
     document.getElementById('trackName').textContent = trackName;
+    document.getElementById('stitle').textContent = trackName;
   }
 
   function pauseTrack() {

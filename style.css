@@ -846,6 +846,9 @@ audio::shadow audio-player {
     
 }
 
+.title{
+  display: none;
+}
 @media screen and (max-width:600px) {
   .player {
     width: 100%;
@@ -871,8 +874,13 @@ audio::shadow audio-player {
   /* position: absolute;
   top: 30%;
   left: -37%; */
+  display: none;
   width: 100%;
   color: var(--text-color2);
 }
+.title{
+  display: block;
+}
+
   
 }
