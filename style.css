@@ -192,7 +192,7 @@ top: 0;
 .othertexts{
     width: 100%;
     margin: auto;
-    height: 83vh;
+    height: 90vh;
     overflow-y: scroll;
  
  display: flex;
@@ -521,6 +521,25 @@ border-radius: 12px;
     
 }
 
+.seekdiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trackimage{
+  width: 100px;
+  height: 70px;
+  background-color: red;
+}
+.tractdetail{
+  display: flex;
+  height: 100%;
+align-items: center;
+gap: 5px;
+width: 300px;
+}
+
 
 .spinner {
   position: relative;
@@ -546,11 +565,13 @@ border-radius: 12px;
 
 #prevButton,
 #nextButton {
-    background-color: rgb(204, 204, 204);
+    background-color: var(--bg-color);
     display: flex;
-    color: rgb(255, 255, 255);
+    color: var(--text-color2);
     border: none;
-    padding: 5px 8px;
+
+    padding: 6px;
+    border-radius: 50%;
     font-size: 15px;
     cursor: pointer;
     margin: 3px;
@@ -564,9 +585,12 @@ border-radius: 12px;
 }
 /* Add styles for the play/pause button */
 #playPauseButton {
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
+  background-color: var(--bg-color);
+  display: flex;
+  color: var(--text-color2);
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
 }
@@ -626,15 +650,40 @@ border-radius: 12px;
   align-items: center;
   display: flex;
   width: 100%;
+  flex-direction: column;
+}
+
+.controltop {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 20px;
+  align-items: center;
+  margin-top: 4px;
+}
+.trackimage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.controlbottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  align-items: flex-end;
+  gap: 10px;
 }
 #seeker{
-  width: 50%;
+  width: 80%;
 }
 audio::shadow audio-player {
   background-color: #f1f1f1; /* Replace with your desired background color */
 }
 #trackName{
-  width: 10%;
+  width: 100%;
   color: var(--text-color2);
 }
 
@@ -660,9 +709,13 @@ audio::shadow audio-player {
 
 
 @media screen and (max-width:700px) {
-    #controls button{
-        display: none;
-    }
+ .trackimage{
+  display: none;
+ }
+
+
+ 
+
     .musiccontents{
       display: flex;
       flex-direction: column;
@@ -764,8 +817,15 @@ audio::shadow audio-player {
         width: 100%;
         display: flex;
         gap: 4px;
-        flex-direction: column;
+        flex-direction: row;
     }
+    .tractdetail {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      gap: 5px;
+      width: 10%;
+  }
 
     #playPauseButton{
         display: block;
@@ -784,4 +844,35 @@ audio::shadow audio-player {
         display: block;
     }
     
+}
+
+@media screen and (max-width:600px) {
+  .player {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.controlbottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+} .tractdetail{
+  width: 100%;
+ }
+ #trackName {
+  position: absolute;
+  top: 30%;
+  left: -37%;
+  width: 100%;
+  color: var(--text-color2);
+}
+  
 }
