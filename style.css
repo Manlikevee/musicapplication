@@ -868,9 +868,9 @@ audio::shadow audio-player {
   width: 100%;
  }
  #trackName {
-  position: absolute;
+  /* position: absolute;
   top: 30%;
-  left: -37%;
+  left: -37%; */
   width: 100%;
   color: var(--text-color2);
 }
