@@ -1,0 +1,139 @@
+      <div class="fullsection">
+                        <div class="popularflex">
+                            <div class="tag">New Release</div>
+                            <div class="seeall">See All</div>
+                        </div>
+                        <div class="albumsection">
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/Asake-%E2%80%93-Basquiat-Lyrics.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2022/07/Burna-Boy-%E2%80%93-Vanilla-1.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/03/Davido-Timeless-Album.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+
+                        
+
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/01/Joeboy-Body-Soul.jpg"
+                                        alt="">
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+
+                            
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/Omah-Lay-%E2%80%93-reason-Lyrics.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+                            
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/odumodublvck-artwork-1.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+                            
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/CKay-Sad-Romance-Deluxe.jpeg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+                            
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/Seyi-Vibez-%E2%80%93-Vibe-Till-Thy-Kingdom-Come-Album-2.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+                            
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/Kcee-%E2%80%93-Ojapiano.jpeg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+                            <div class="album">
+                                <div class="image">
+                                    <img src="https://www.naijavibes.com/wp-content/uploads/2023/06/Sarz-EP.jpg"
+                                        alt="">
+                                        <div class="overlayblock">
+                                            <box-icon name='play-circle' animation='flashing' color='#e63d2a' ></box-icon>
+                                        </div>
+                                </div>
+                                <div class="title">Work Of Art</div>
+                                <div class="albumname">Asake</div>
+                            </div>
+
+
+                            
+
+                        </div>
+
+
+                    </div>

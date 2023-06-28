@@ -387,6 +387,94 @@ position: relative;
     font-weight: bold;
   }
   
+
+                              
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  cursor: grab;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.slider__container.dragging {
+  scroll-behavior: auto;
+  cursor: grabbing;
+}
+
+.slider__item {
+  padding: 16px 8px;
+  flex: 0 0 auto;
+  width: calc(100% / 5);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .slider__item,
+  .slider__container[data-step="4"] .slider__item {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__item,
+  .slider__container[data-step="4"] .slider__item,
+  .slider__container[data-step="3"] .slider__item {
+    width: calc(100% / 1);
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__item,
+  .slider__container[data-step="4"] .slider__item,
+  .slider__container[data-step="3"] .slider__item,
+  .slider__container[data-step="2"] .slider__item {
+    width: calc(100% / 1);
+  }
+}
+
+.slider__control {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .3s;
+}
+
+.slider__control.prev {
+  left: 16px;
+}
+
+.slider__control.next {
+  right: 16px;
+}
+
+.slider__control:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
+.slider__item img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+}
   .text-overlay p {
    
 
@@ -846,7 +934,7 @@ audio::shadow audio-player {
     
 }
 
-.title{
+.titles{
   display: none;
 }
 @media screen and (max-width:600px) {
@@ -878,10 +966,16 @@ audio::shadow audio-player {
   width: 100%;
   color: var(--text-color2);
 }
-.title{
+.titles{
   display: block;
   font-size: small;
 }
 
+
+
   
+}
+
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+  font-size: 14px !important;
 }
