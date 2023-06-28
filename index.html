@@ -40,7 +40,7 @@
                                         history
                                         </span>
                                 </div>
-                                <div class="linktext">Recent Plays</div>
+                                <div onclick="toggleFullscreen()" class="linktext">Recent Plays</div>
                             </div>
                         </li>
 
@@ -474,6 +474,37 @@ Unavailable
     <script src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js'></script>
 
     <script src="script.js"></script>
+
+    <script>
+        function toggleFullscreen() {
+          if (document.fullscreenElement || document.webkitFullscreenElement ||
+              document.mozFullScreenElement || document.msFullscreenElement) {
+            // Exit fullscreen
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+              document.mozCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+              document.msExitFullscreen();
+            }
+          } else {
+            // Enter fullscreen
+            var element = document.documentElement; // <html> element
+    
+            if (element.requestFullscreen) {
+              element.requestFullscreen();
+            } else if (element.webkitRequestFullscreen) {
+              element.webkitRequestFullscreen();
+            } else if (element.mozRequestFullScreen) {
+              element.mozRequestFullScreen();
+            } else if (element.msRequestFullscreen) {
+              element.msRequestFullscreen();
+            }
+          }
+        }
+      </script>
 </body>
 
 </html>
