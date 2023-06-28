@@ -740,7 +740,7 @@ audio::shadow audio-player {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(173px, 1fr));
-    gap: 12px;
+    gap: 20px;
     grid-auto-rows: 1fr;
 }
 .image img {
