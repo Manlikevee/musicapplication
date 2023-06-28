@@ -175,7 +175,7 @@ flex-shrink: 0;
 .musiccontents{
     display: flex;
     flex-direction: column;
- 
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -663,6 +663,12 @@ audio::shadow audio-player {
     #controls button{
         display: none;
     }
+    .musiccontents{
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      overflow: hidden;
+  }
     .header .welcomegreeting{
         width: 80%;
     }
