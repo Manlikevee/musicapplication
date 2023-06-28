@@ -766,7 +766,7 @@ audio::shadow audio-player {
     }
     .othertexts {
         width: 100%;
-    height: 90vh;
+    height: 110vh;
     overflow: scroll;    
     }
     .header .searchbar{
