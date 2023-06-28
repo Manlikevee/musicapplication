@@ -300,6 +300,10 @@ flex-shrink: 0;
     box-shadow: var(--darkshadow); /* Hover box shadow */
     background-color:var(--card); /* Background color on hover */
   }
+  .album:hover  .overlayblock{
+    opacity: 1;
+  }
+  
 .profilephoto{
     width: fit-content;
     display: flex;
