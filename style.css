@@ -666,7 +666,7 @@ audio::shadow audio-player {
     .musiccontents{
       display: flex;
       flex-direction: column;
-      height: 95vh;
+      height: 92vh;
       overflow: hidden;
   }
     .header .welcomegreeting{
