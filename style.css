@@ -175,7 +175,7 @@ flex-shrink: 0;
 .musiccontents{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+ 
     overflow: hidden;
 }
 
