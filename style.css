@@ -99,6 +99,46 @@ box-icon{
     color: #E63D2A !important;
 }
 
+.tab-content .content {
+  display: none;
+}
+
+.tab-content .content.active {
+  display: block;
+}
+.albumart{
+  width: 240px;
+  height: 240px;
+ 
+  box-shadow: 0 4px 60px rgba(0,0,0,.5);
+}
+.bgb{
+  padding: 3px;
+  border-radius: 4px;
+  width: fit-content;
+  background-color: var(--spotify2);
+}
+.albumart img{
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+
+}
+.albumartsection{
+  display: flex;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #000000, #ffffff);
+  gap: 20px;
+  border-radius: 3px;
+  align-items: center;
+  
+}
+
+.songtype{
+  display: flex;
+flex-direction: column;
+gap: 10px;
+}
 .line{
 
     width: 100%;

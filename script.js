@@ -336,3 +336,45 @@ sliders.forEach((slider, i) => {
   slider.addEventListener("touchend", dragStop);
   slider.addEventListener("mouseleave", dragStop);
 });
+
+
+
+// Add 'active' class to the first tab and content on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const defaultTabIndex = 0;
+  switchTab(defaultTabIndex);
+});
+
+function switchTab(tabIndex) {
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.content');
+
+  // Remove 'active' class from all tabs and contents
+  tabs.forEach(tab => tab.classList.remove('active'));
+  contents.forEach(content => content.classList.remove('active'));
+
+  // Add 'active' class to the selected tab and content
+  tabs[tabIndex].classList.add('active');
+  contents[tabIndex].classList.add('active');
+}
+
+
+
+
+const topDiv = document.getElementById("background");
+const topImg = document.getElementById("apiimg");
+const colorThief = new ColorThief();
+const intensity = 1;
+
+if (topImg.complete) {
+  setDullBackground();
+} else {
+  topImg.addEventListener("load", setDullBackground);
+}
+
+function setDullBackground() {
+  const rgb = colorThief.getColor(topImg);
+  const dullRgb = rgb.map(value => Math.round(value * intensity));
+  const background = `background: rgb(${dullRgb.join(',')});`;
+  topDiv.setAttribute("style", background);
+}
