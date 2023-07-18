@@ -1,3 +1,17 @@
+var container = document.getElementById('othertexts');
+var revealDiv = document.getElementById('reveal-div');
+
+container.addEventListener('scroll', function() {
+  var scrollPosition = container.scrollTop;
+
+  if (scrollPosition >= 80) {
+    revealDiv.style.display = 'flex';
+  } else {
+    revealDiv.style.display = 'none';
+  }
+});
+
+
 var scrollableDiv = document.getElementById('othertexts');
 
 scrollableDiv.addEventListener('scroll', function() {
