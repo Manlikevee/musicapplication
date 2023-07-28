@@ -838,8 +838,13 @@ Unavailable
                 <span id="currentTime">00:00</span>
               <div class="seekdiv">
                 <div class="controltop">
+
                     <!-- <button onclick="playTracks()"><box-icon name='play' style="display: none;"></box-icon></button>  -->
-                    <button onclick="pauseTrack()" ><box-icon name='pause'  ></box-icon></button>
+                    <button class="pls" onclick="pauseTrack()" >
+                        <span class="material-symbols-outlined">
+                            pause_circle
+                            </span>
+                    </button>
                        <button id="prevButton"><span class="material-symbols-outlined">
                         skip_previous
                         </span></button>

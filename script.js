@@ -1,30 +1,3 @@
-var container = document.getElementById('othertexts');
-var revealDiv = document.getElementById('reveal-div');
-
-container.addEventListener('scroll', function() {
-  var scrollPosition = container.scrollTop;
-
-  if (scrollPosition >= 80) {
-    revealDiv.style.display = 'flex';
-  } else {
-    revealDiv.style.display = 'none';
-  }
-});
-
-
-var scrollableDiv = document.getElementById('othertexts');
-
-scrollableDiv.addEventListener('scroll', function() {
-    console.log('logging')
-  var navbar = document.getElementById('navbar');
-  var scrollPosition = scrollableDiv.scrollTop;
-
-  if (scrollPosition > 0) {
-    navbar.classList.add('headerscrolled');
-  } else {
-    navbar.classList.remove('headerscrolled');
-  }
-});
 
 
 const swiper = new Swiper(".swiper-slider", {
@@ -128,9 +101,7 @@ function playTracks() {
     
     audioPlayer.play();
     isPlaying = true;
-    playPauseButton.classList.remove('play');
-    playPauseButton.classList.add('pause');
-    vinylSpinner.classList.add('spinner');
+
 
    
   }
@@ -138,9 +109,9 @@ function playTracks() {
   function pauseTrack() {
     console.log('clicked')
     audioPlayer.pause();
-    isPlaying = false;
-    playPauseButton.classList.remove('pause');
-    playPauseButton.classList.add('play');
+    isPlaying = true;
+    // playPauseButton.classList.remove('pause');
+    // playPauseButton.classList.add('play');
    
   }
 

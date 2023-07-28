@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="music-item" data-songs='["path_to_song1.mp3", "path_to_song2.mp3", "path_to_song3.mp3"]'></div>
+<div class="music-item" data-songs='["path_to_song1.mp3"]'></div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const musicItems = document.querySelectorAll('.music-item');
+
+  musicItems.forEach(function(item) {
+    const songs = JSON.parse(item.getAttribute('data-songs'));
+    const audio = new Audio();
+    const playPauseBtn = document.createElement('div');
+    const musicSlider = document.createElement('div');
+
+    let currentSongIndex = 0;
+
+    function loadSong() {
+      audio.src = songs[currentSongIndex];
+      audio.load();
+    }
+
+    function playSong() {
+      audio.play();
+      playPauseBtn.classList.add('paused');
+    }
+
+    function pauseSong() {
+      audio.pause();
+      playPauseBtn.classList.remove('paused');
+    }
+
+    function togglePlayPause() {
+      if (audio.paused) {
+        playSong();
+      } else {
+        pauseSong();
+      }
+    }
+
+    function playNextSong() {
+      currentSongIndex = (currentSongIndex + 1) % songs.length;
+      loadSong();
+      playSong();
+    }
+
+    function playPreviousSong() {
+      currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+      loadSong();
+      playSong();
+    }
+
+    function updateMusicSlider() {
+      const percent = (audio.currentTime / audio.duration) * 100;
+      musicSlider.style.width = percent + '%';
+    }
+
+    audio.addEventListener('timeupdate', function() {
+      updateMusicSlider();
+    });
+
+    audio.addEventListener('ended', function() {
+      playNextSong();
+    });
+
+    playPauseBtn.addEventListener('click', function() {
+      togglePlayPause();
+    });
+
+    musicSlider.addEventListener('click', function(e) {
+      const percent = e.offsetX / musicSlider.offsetWidth;
+      audio.currentTime = percent * audio.duration;
+      updateMusicSlider();
+    });
+
+    item.addEventListener('click', function() {
+      if (audio.paused) {
+        playSong();
+      } else {
+        pauseSong();
+      }
+    });
+
+    playPauseBtn.classList.add('play-pause-btn');
+    item.appendChild(playPauseBtn);
+
+    musicSlider.classList.add('music-slider');
+    item.appendChild(musicSlider);
+
+    loadSong();
+  });
+});
+
+</script>
+</body>
+</html>

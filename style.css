@@ -741,6 +741,17 @@ width: 300px;
   border: none;
   cursor: pointer;
 }
+
+.pls{
+  background-color: var(--bg-color);
+  display: flex;
+  color: var(--text-color2);
+  border: none;
+  padding: 6px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
 .albumname{
     color: #E63D2A;
 }
